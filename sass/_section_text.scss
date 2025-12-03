@@ -1,0 +1,152 @@
+section{
+    @include flex;
+    justify-content: center;
+}
+.about-ingridients, .story, .masterclass, .home-inf, .collection, .contact, .banner-collection, .error {    
+    @include flex;
+    flex-direction: column;
+    
+    .conteiner{
+    .text{
+        @include flex;
+        flex-direction: column;
+        align-items: center;
+        width: 99%;
+        
+
+        .text__where{
+            color:$gray;
+            font-size:15px;
+            padding:49px 0 31px 21px;
+            width: 100%;
+            text-align: left;
+            align-self:flex-start ;
+        }
+        hr{
+            margin: 19px 180px;
+        }
+        .text__for-name{
+            margin-bottom:0;
+            margin-top:20px;
+        }
+        .info{
+            width: 850px;
+           
+            hr{
+                margin: 19px 180px;
+            }
+            &__inf-1{
+                letter-spacing: 0.46px;
+            }
+            &__inf-2{
+                letter-spacing: 0.46px;
+            }
+        }
+    }
+    }
+}
+.about-ingridients{
+    padding-bottom:99px;
+    .conteiner>.text{
+        .text__for-name{
+            margin-top:12px;
+        }
+        .info{
+            margin-top: 17px;
+
+            p{
+                line-height: 30px;
+            }
+            .info__inf-1{
+                margin: 37px 0 25px;
+            }
+            .info__inf-2{
+                margin: 40px 0 0;
+            }
+            
+        }
+    }
+}
+.story{
+    padding-bottom:56px;
+    .conteiner>div{
+        
+        .info{
+            hr{
+                margin: 0 180px;
+            }
+            hr:first-of-type{
+                margin: 0 175px;
+                margin-top: 31px;
+            }
+            &__inf-1{
+                margin-top: 40px;
+            }
+           hr:last-of-type{
+            margin: 30px 175px 40px;
+           }
+            &__inf-3{
+                margin-top: 15px;
+                letter-spacing: 0.46px;
+            }
+        
+        }
+    }
+   
+
+
+}
+
+.home-inf{
+    margin: 119px auto 270px;
+
+    .conteiner{
+    
+        .text{
+            hr{
+                margin: 17px 180px;
+            }
+            &__name-two{
+                max-width: 473px;
+                line-height:40px;
+            }
+            .info{
+                &__inf-1{
+                    margin: 47px auto 20px;
+                }
+            }
+            
+        }
+   }
+}
+    
+
+.masterclass>.conteiner>.text{
+    .info{
+        &__inf-1{
+            margin: 70px auto 0;
+        }
+        &__inf-2{
+            margin-top: 0px;
+        }
+        hr:first-of-type{
+            margin:17px 180px 48px;
+        }
+       
+    }
+}
+.masterclass>.conteiner:nth-of-type(3)>.text{
+    .info{
+        hr{
+            margin:50px 180px 30px; 
+        }
+        p{
+            letter-spacing: 0.01px;
+        }
+    }
+}
+.contact>.conteiner>.text{
+    h1{
+        padding: 3px 0 0;
+    }
+}

@@ -1,0 +1,113 @@
+.banner, .banner-contact, .banner_collection{
+    @include flex;
+    align-items: start;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    .conteiner{
+        
+        .text{
+            @include flex;
+            flex-direction: column;
+            margin: 211px auto auto;
+            color:$white;
+           
+            &__main-name{
+                margin: 20px auto;
+                color:$white;
+                line-height:59px;
+                letter-spacing:2%;
+            }
+            @include flex;
+            flex-direction: column;
+            
+        }
+    } 
+}
+.banner{
+    height: 730px;
+    background-image: url(../img/back_start.png);
+    .conteiner{
+       
+        
+        .text{
+            justify-content: center;
+            &__main-name{
+                max-width: 617px;
+            }
+            .button__btn{
+                margin-top:55px;
+            }
+        }
+    }
+}
+.banner-contact{
+    height: 800px;
+    background-image: url(../img/back_contacts.png);
+        
+    .conteiner{
+        .text{
+            margin: 150px auto 0;
+
+            h2{
+                font-weight: normal;
+                font-size: 32px;
+                max-width: 500px;
+                line-height: 39px;
+                margin-bottom: 30px;
+                text-align: center;
+                letter-spacing: 0.47px;
+            }
+
+            p{
+                line-height: 30px;
+            max-width: 850px;
+            }
+
+            .button>button{
+                margin-top:90px;
+               
+            }
+        }
+        
+        
+        
+    }
+}
+.banner-collection{
+    height: 800px;
+    background-image: url(../img/back_collection.png);
+    justify-content: start;
+    color:$white;
+    width: 100%;
+
+    .conteiner{
+        .text{
+          margin-top:147px;
+
+          p{
+            
+            max-width: 850px;
+            line-height: 32px;
+            font-size: 15px;
+           }
+        
+          h2{
+            max-width: 500px;
+            text-align: center;
+            line-height: 32px;
+           }
+
+           .text__for-name{
+            margin-top: 30px;
+           }
+
+          .button>button{
+            margin-top:90px;
+           }
+         
+        }
+    }
+}

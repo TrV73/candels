@@ -1,0 +1,14 @@
+.conteiner{
+    width: 1520px; //1520!!!
+    @include flex;
+}
+
+body{
+    margin: 0 auto;
+    @include flex;
+    flex-direction: column;
+}
+
+body>section{
+    @include flex;
+}

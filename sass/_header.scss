@@ -1,0 +1,81 @@
+header {
+    background-color: $green;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    .header-conteiner {
+        height: 70px;
+        display: grid;
+        grid-template-columns: 100px 1fr minmax(auto,745px) 1fr 100px;
+        width: inherit;
+
+        .menu {
+            .menu__logo{
+                padding-top: 3px;
+            }
+            grid-column: 3/4;
+            @include flex;
+            justify-content: space-between; 
+            list-style: none;
+            padding-top: 3px;
+            li a {
+                text-decoration: none;
+                color:$white;
+                font-size: 20px;
+                font-weight: 500;
+            }
+            li a:hover{
+                color:$orange;
+            }
+        }
+        .shop{
+            grid-column: 4/5;
+            display: flex;
+            justify-content: right;
+            align-self: center;
+        }
+
+        .burger-menu summary {
+            list-style: none;
+        }
+        .burger-icon {
+            font-size: 32px;
+            color: $white;
+            cursor: pointer;
+            user-select: none;
+            padding: 10px;
+        }
+        
+        
+        .burger-menu {
+            display: none; 
+            grid-column: -2/-1;
+        }
+
+        .menu-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background: $green;
+            padding: 20px;
+        }
+        
+        .menu-wrapper__li a {
+            color: $white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        
+        .menu-wrapper__li a:hover {
+            color: $orange;
+        }
+    }
+}
+
+img.shop__img:hover{
+    filter: brightness(0) saturate(100%) invert(75%) sepia(30%) saturate(800%) hue-rotate(345deg) brightness(95%) contrast(90%);
+}
+.menu__logo:hover{
+    filter: brightness(0) saturate(100%) invert(75%) sepia(30%) saturate(800%) hue-rotate(345deg) brightness(95%) contrast(90%);
+}

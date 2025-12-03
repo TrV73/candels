@@ -1,0 +1,37 @@
+.advantages{
+    color:$white;
+    font-size:14px;
+    @include flex;
+    background-color: $green;
+    width: 100%;
+
+    .advantages-conteiner{
+        padding-top: 34px;
+        padding-bottom: 27px;
+        flex-direction: column;
+        width: inherit;
+
+        p{
+            width: initial;
+        }
+        &__name-adv{
+            font-size: 40px;
+            text-align: center;
+        }
+        &__adv2{
+            padding-left: 55px;
+        }
+        &__adv4{
+            padding-left: 319px;
+        }
+        &__adv1{
+            text-align: right;
+            padding-right: 76px;
+        }
+        &__adv3{
+            text-align: right;
+            padding-right: 136px;
+        }
+
+    }
+}

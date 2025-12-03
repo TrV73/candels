@@ -1,0 +1,99 @@
+footer {
+    color:$black;
+    width: 100%;
+    background-color: $background;
+    color: $white;
+    padding: 82px 0 30px 0;
+    @include flex;
+    
+    .conteiner>div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      width: inherit;
+
+      .list-footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: 100%;
+        width: inherit;
+        
+        .list-footer__icon{
+            margin: 12px auto auto 25px;
+            border-left: 0px solid $black;
+        } 
+
+
+        & > div {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          height: 100%;
+
+          ul>.email{
+            text-decoration: underline $gray;
+         }
+          
+        }
+
+        h3{
+            color:$black;
+            font-size: 16px;
+            padding: 0 0 0 50px;
+            margin: 0;
+        }
+        
+        li{
+            color:$black;
+            font-size: 14px;
+            padding: 0 0 0 50px;
+        }
+        li:first-of-type{
+            padding-top: 25px;
+        }
+
+        
+        ul {
+
+            border-left: 1px solid $black;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 0;
+            height: 100%;
+
+            li>a:hover {
+                color:$orange;
+            }
+            
+        }
+
+
+        ul>li>a {
+            text-decoration: none;
+            color:$black;
+            span{
+                display: none;
+            }
+        }
+    
+        a {
+            color:$black;
+        }
+  
+        }
+
+        .inf-footer>p{
+            color:$black;
+            padding-top:55px;
+        }
+   
+    
+     
+    }
+}
+
+ 

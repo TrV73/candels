@@ -1,0 +1,61 @@
+.assortiment{
+    margin: 67px 0 136px;
+    @include flex;
+    justify-content: center;
+    .conteiner{
+        .assort{
+            @include flex;
+            justify-content: space-between;
+            gap:40px;
+       
+            a{
+                @include flex;
+                background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                div {
+                    @include flex;
+                    flex-basis: 1;
+                    height: 400px;
+                    width: 350px;
+                }
+        
+                
+                p{
+                    color:$white;
+                    font-size: 32px;
+                    text-align: center;
+                }
+        
+            }
+
+            a:nth-of-type(1){
+                background-image: url(../img/kart_1.png);
+            }
+            a:nth-of-type(2){
+                background-image: url(../img/kart_2.png);
+            }
+            a:nth-of-type(3){
+                background-image: url(../img/kart_3.png);
+            }
+            a:nth-of-type(4){
+                background-image: url(../img/kart_4.png);
+            }
+
+            a:hover{
+                filter: brightness(75%);
+            }
+        
+        .card__nazv{
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .card__inf{
+            font-size: 14px;
+        }
+
+    }
+        
+    }
+}
