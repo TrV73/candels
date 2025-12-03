@@ -1463,7 +1463,7 @@ button:active {
     background-size: cover;
   }
 }
-@media (max-width: 479px) {
+@media (max-width: 1000px) {
   .servis > .conteiner > .services {
     grid-template-rows: repeat(2, 200px);
   }
@@ -1493,7 +1493,7 @@ button:active {
     flex-direction: column;
   }
   .comments .conteiner > div .comment .comment__text {
-    min-height: 120px;
+    min-height: 200px;
   }
   footer > .conteiner > div > .list-footer > .list-footer__icon {
     display: none;
@@ -1612,6 +1612,20 @@ button:active {
   .secrets > .conteiner > .sekr .text .btn {
     margin-top: 10px;
   }
+  footer > .conteiner > .footer-conteiner > .list-footer div .list-footer__name {
+    width: inherit;
+    text-align: center;
+    padding-left: 0;
+  }
+  footer > .conteiner > .footer-conteiner > .list-footer div ul li {
+    padding: 0 0 0 20px;
+  }
+  footer > .conteiner > .footer-conteiner > .list-footer div:nth-of-type(2) ul li {
+    padding: 0;
+  }
+  .home-inf {
+    margin: 50px auto;
+  }
   .secrets > .conteiner > .sekr {
     display: block;
   }
@@ -1621,6 +1635,14 @@ button:active {
   .secrets > .conteiner > .sekr .text {
     width: inherit;
     margin-bottom: 50px;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  footer .conteiner > div {
+    display: flex;
+    justify-content: center;
   }
   .masterclass-photo {
     display: grid;
@@ -1709,5 +1731,28 @@ button:active {
   .story-photo .conteiner > div div:nth-of-type(4) {
     grid-row: 4/5;
     grid-column: -1/-2;
+  }
+  .contact-form .conteiner .contact-form__form {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .contact-form .conteiner .contact-form__row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact-form .conteiner .contact-form__row .contact-form__row--full {
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  .contact-form .conteiner .contact-form__row .contact-form__group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
