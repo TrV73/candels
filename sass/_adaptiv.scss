@@ -375,8 +375,13 @@
         }
     
      }
-     footer >.conteiner>div>.list-footer>.list-footer__icon{
+     footer {
+        display: flex;
+        justify-content: center;
+        .conteiner>div>.list-footer>.list-footer__icon{
         display: none;
+     }
+     
      }
      footer >.conteiner>div>.list-footer>.list-footer__partners{
         display: none;
@@ -584,7 +589,10 @@
 
 
 
-    .servis>.conteiner>.services{
+    .servis{
+        display: flex;
+        justify-content: center;
+    .conteiner>.services{
                 
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: repeat(3, 400px);
@@ -611,10 +619,11 @@
             }
     
         }
+    }
             
 }
-        
-@media (max-width: 479px){
+    
+@media (max-width: 1000px){
     .servis>.conteiner>.services{
         grid-template-rows: repeat(2, 200px);
     }
@@ -817,7 +826,34 @@
             }
         }
     }
-
+    
+    footer>.conteiner>.footer-conteiner>.list-footer{
+        div{
+            .list-footer__name{
+                width: inherit;
+                text-align: center;
+                padding-left: 0;
+            }
+            ul{
+                li{
+                    padding: 0 0 0 20px;
+                }
+            }
+        }
+        div:nth-of-type(2){
+            
+            ul{
+                li{
+                    padding: 0 ;
+                }
+            }
+        }
+    }
+    
+    .home-inf{
+        margin: 50px auto;
+        
+    }
     .secrets>.conteiner>.sekr{
         display: block;
       .photo{
@@ -829,7 +865,14 @@
     }
     }
     
-
+    footer{
+        display: flex;
+        justify-content: center;
+        .conteiner> div {
+            display: flex;
+            justify-content: center;
+        }
+      }
 
     .masterclass-photo{
         display: grid;
@@ -952,5 +995,48 @@
         
             }
         }
+
+
+
+
+
+
+        .contact-form {
             
+          .conteiner {
+            .contact-form__form {
+                margin-left:10px ;
+                margin-right:10px;
+                width: inherit;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 20px;
+              }
+              
+              .contact-form__row {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                
+                
+              
+              .contact-form__row--full {
+                flex-direction: column;
+                margin-top:25px;
+              }
+              
+              .contact-form__group {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+              }
+              
+            }
+              
+              
+          }
+          
+          
+        }
         }
