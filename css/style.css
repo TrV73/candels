@@ -1500,7 +1500,7 @@ button:active {
     flex-direction: column;
   }
   .comments .conteiner > div .comment .comment__text {
-    min-height: 200px;
+    min-height: 300px;
   }
   footer > .conteiner > div > .list-footer > .list-footer__icon {
     display: none;
