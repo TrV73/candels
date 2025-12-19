@@ -64,6 +64,14 @@ footer {
   line-height: 20px;
 }
 
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
 .conteiner {
   width: 1520px;
   display: flex;
@@ -72,17 +80,7 @@ footer {
 }
 
 body {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-body > section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0;
 }
 
 header {
@@ -95,7 +93,7 @@ header .header-conteiner {
   height: 70px;
   display: grid;
   grid-template-columns: 100px 1fr minmax(auto, 745px) 1fr 100px;
-  width: inherit;
+  width: 1200px;
 }
 header .header-conteiner .menu {
   grid-column: 3/4;
@@ -256,13 +254,17 @@ section {
   align-items: center;
   flex-direction: column;
 }
+.about-ingridients .conteiner, .story .conteiner, .masterclass .conteiner, .home-inf .conteiner, .collection .conteiner, .contact .conteiner, .banner-collection .conteiner, .error .conteiner {
+  margin: 0;
+  padding: 0;
+}
 .about-ingridients .conteiner .text, .story .conteiner .text, .masterclass .conteiner .text, .home-inf .conteiner .text, .collection .conteiner .text, .contact .conteiner .text, .banner-collection .conteiner .text, .error .conteiner .text {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   align-items: center;
-  width: 99%;
+  width: inherit;
 }
 .about-ingridients .conteiner .text .text__where, .story .conteiner .text .text__where, .masterclass .conteiner .text .text__where, .home-inf .conteiner .text .text__where, .collection .conteiner .text .text__where, .contact .conteiner .text .text__where, .banner-collection .conteiner .text .text__where, .error .conteiner .text .text__where {
   color: #575757;
@@ -333,7 +335,7 @@ section {
 }
 
 .home-inf {
-  margin: 119px auto 270px;
+  margin: 119px 0 270px;
 }
 .home-inf .conteiner .text hr {
   margin: 17px 180px;
@@ -597,34 +599,35 @@ button:active {
   opacity: 0.8;
 }
 
-.masterclass > .conteiner > .text > .button > button {
+.masterclass > .conteiner > .text button {
   margin-top: 56px;
   margin-bottom: 177px;
   padding: 13px 71px 13px 72px;
   margin-right: 28px;
 }
 
-.sekr > .text > .button > button {
+.sekr > .text > button {
   padding: 13px 40px 13px 39px;
   margin-top: 70px;
 }
 
-.banner-contact > .conteiner > .text > a button {
+.banner-contact > .conteiner > .text > .button_btn {
   padding: 13px 44px 13px 45px;
   letter-spacing: 0.3px;
 }
 
-.banner-collection > .conteiner > .text > a button {
+.banner-collection > .conteiner > .text > .button_btn {
   padding: 13px 74px 13px 75px;
 }
 
-.contact-form > .conteiner > form > a button {
+.contact-form > .conteiner > form > button {
   padding: 13px 62px 13px 62px;
+  width: 200px;
   margin-bottom: 118px;
   margin-top: 34px;
 }
 
-.error > .conteiner > .text > .button > button {
+.error > .conteiner > .text > .button_btn {
   margin-top: 50px;
 }
 
@@ -636,7 +639,7 @@ button:active {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 100vw;
 }
 .banner .conteiner .text, .banner-contact .conteiner .text, .banner_collection .conteiner .text {
   display: flex;
@@ -691,7 +694,7 @@ button:active {
   line-height: 30px;
   max-width: 850px;
 }
-.banner-contact .conteiner .text .button > button {
+.banner-contact .conteiner .text button {
   margin-top: 90px;
 }
 
@@ -718,7 +721,7 @@ button:active {
 .banner-collection .conteiner .text .text__for-name {
   margin-top: 30px;
 }
-.banner-collection .conteiner .text .button > button {
+.banner-collection .conteiner .text button {
   margin-top: 90px;
 }
 
@@ -827,7 +830,7 @@ button:active {
   width: 80%;
   margin: 15px auto 50px;
 }
-.secrets .conteiner .sekr .text .btn {
+.secrets .conteiner .sekr .text .btn_button {
   margin-top: 70px;
 }
 .secrets .conteiner .sekr .photo {
@@ -1209,7 +1212,7 @@ button:active {
   .secrets > .conteiner > .sekr .text p {
     max-width: 320px;
   }
-  .secrets > .conteiner > .sekr .text .btn {
+  .secrets > .conteiner > .sekr .text .button_btn {
     margin-top: 30px;
   }
 }
@@ -1245,13 +1248,16 @@ button:active {
     grid-column: -1/-2;
   }
   footer > .conteiner > div > .list-footer > .list-footer__contacts {
-    width: 150px;
+    width: 200px;
   }
   footer > .conteiner > div > .list-footer > .list-footer__contacts .list-footer__ul > li a.email:first-of-type {
     display: none;
   }
   footer > .conteiner > div > .list-footer > .list-footer__contacts .list-footer__ul > li a.email span {
     display: inline;
+  }
+  footer > .conteiner > div > .list-footer > .list-footer__menu {
+    width: 200px;
   }
   footer .conteiner div {
     margin: 10px;
@@ -1384,7 +1390,7 @@ button:active {
   .secrets > .conteiner > .sekr .text p {
     max-width: 320px;
   }
-  .secrets > .conteiner > .sekr .text .btn {
+  .secrets > .conteiner > .sekr .text ._button {
     margin-top: 10px;
   }
   .secrets > .conteiner > .sekr {
@@ -1463,18 +1469,21 @@ button:active {
     background-size: cover;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 480px) {
   .servis > .conteiner > .services {
     grid-template-rows: repeat(2, 200px);
   }
   footer > .conteiner > div > .list-footer > .list-footer__contacts {
-    width: 150px;
+    width: 120px;
   }
   footer > .conteiner > div > .list-footer > .list-footer__contacts .list-footer__ul > li a.email:first-of-type {
     display: none;
   }
   footer > .conteiner > div > .list-footer > .list-footer__contacts .list-footer__ul > li a.email span {
     display: inline;
+  }
+  footer > .conteiner > div > .list-footer > .list-footer__menu {
+    width: 120px;
   }
   footer .conteiner div {
     margin: 10px;
@@ -1493,7 +1502,7 @@ button:active {
     flex-direction: column;
   }
   .comments .conteiner > div .comment .comment__text {
-    min-height: 120px;
+    min-height: 200px;
   }
   footer > .conteiner > div > .list-footer > .list-footer__icon {
     display: none;
@@ -1502,10 +1511,13 @@ button:active {
     display: none;
   }
   footer > .conteiner > div > .list-footer > .list-footer__contacts {
-    max-width: 150px;
+    max-width: 120px;
   }
   footer > .conteiner > div > .list-footer > .list-footer__contacts .list-footer__ul > li a.email {
     width: 100px;
+  }
+  footer > .conteiner > div > .list-footer > .list-footer__menu {
+    width: 120px;
   }
   footer > .conteiner > div > .list-footer > .list-footer__menu > ul {
     border: 0px;
@@ -1609,7 +1621,7 @@ button:active {
   .secrets > .conteiner > .sekr .text p {
     max-width: 320px;
   }
-  .secrets > .conteiner > .sekr .text .btn {
+  .secrets > .conteiner > .sekr .text .button_btn {
     margin-top: 10px;
   }
   footer > .conteiner > .footer-conteiner > .list-footer div .list-footer__name {

@@ -13,29 +13,30 @@ button:hover {
 button:active{
     opacity: 0.8; 
 }
-.masterclass>.conteiner>.text>.button>button{
+.masterclass>.conteiner>.text button{
     margin-top: 56px;
     margin-bottom: 177px;
     padding: 13px 71px 13px 72px;
     margin-right: 28px;
 }
-.sekr>.text>.button>button{
+.sekr>.text>button{
     
     padding: 13px 40px 13px 39px;
     margin-top: 70px;
 }
-.banner-contact>.conteiner>.text>a button{
+.banner-contact>.conteiner>.text>.button_btn{
     padding: 13px 44px 13px 45px;
     letter-spacing: 0.3px;
 }
-.banner-collection>.conteiner>.text>a button{
+.banner-collection>.conteiner>.text>.button_btn{
     padding: 13px 74px 13px 75px;
 }
-.contact-form>.conteiner>form>a button{
+.contact-form>.conteiner>form>button{
     padding: 13px 62px 13px 62px;
+    width: 200px;
   margin-bottom: 118px;
   margin-top: 34px;
 }
-.error>.conteiner>.text>.button>button{
+.error>.conteiner>.text>.button_btn{
     margin-top: 50px;
 }

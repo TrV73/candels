@@ -3,6 +3,7 @@
     .conteiner{
         width: 1200px; 
     }
+    
     .assort{
         width: inherit;
         flex-wrap: wrap;
@@ -21,7 +22,6 @@
 
      }
      .contact-form {
-        
         .conteiner {
           .contact-form__form {
               margin-left:20px ;
@@ -270,7 +270,7 @@
             p{
                 max-width: 320px;
             }
-            .btn{
+            .button_btn{
                 margin-top:30px;
                    
             }
@@ -280,6 +280,7 @@
     
 }
 @media (min-width: 480px) and (max-width: 767px){
+    
     .servis>.conteiner>.services{
         grid-template-rows: repeat(2, 200px);
     }
@@ -336,7 +337,7 @@
 
 
     footer >.conteiner>div>.list-footer>.list-footer__contacts{
-        width: 150px;
+        width: 200px;
         .list-footer__ul>li{
             a.email:first-of-type{
                 display: none;
@@ -350,6 +351,8 @@
             }
         }
      }
+     footer >.conteiner>div>.list-footer>.list-footer__menu{
+        width: 200px;}
     footer{
         .conteiner{
             div{
@@ -525,7 +528,7 @@
             p{
                 max-width: 320px;
             }
-            .btn{
+            ._button{
                 margin-top:10px;
                    
             }
@@ -623,12 +626,12 @@
             
 }
     
-@media (max-width: 1000px){
+@media (max-width: 480px){
     .servis>.conteiner>.services{
         grid-template-rows: repeat(2, 200px);
     }
     footer >.conteiner>div>.list-footer>.list-footer__contacts{
-        width: 150px;
+        width: 120px;
         .list-footer__ul>li{
             a.email:first-of-type{
                 display: none;
@@ -642,6 +645,8 @@
             }
         }
      }
+     footer >.conteiner>div>.list-footer>.list-footer__menu{
+        width: 120px;}
     footer{
         .conteiner{
             div{
@@ -650,6 +655,7 @@
         }
             
     }
+    
     .comments{
         @include flex;
         flex-wrap: wrap;
@@ -660,7 +666,7 @@
             flex-direction: column;
             .comment{
                 .comment__text{
-                    min-height: 120px;
+                    min-height: 200px;
                 }
             }
             
@@ -674,13 +680,15 @@
         display: none;
      }
      footer >.conteiner>div>.list-footer>.list-footer__contacts{
-        max-width: 150px;
+        max-width: 120px;
         .list-footer__ul>li{
             a.email{
                 width: 100px;
             }
         }
      }
+     footer >.conteiner>div>.list-footer>.list-footer__menu{
+        width: 120px;}
      footer >.conteiner>div>.list-footer>.list-footer__menu>ul{
         border:0px;
      }
@@ -820,7 +828,7 @@
             p{
                 max-width: 320px;
             }
-            .btn{
+            .button_btn{
                 margin-top:10px;
                    
             }
