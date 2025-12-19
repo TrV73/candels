@@ -270,7 +270,6 @@ section {
   color: #575757;
   font-size: 15px;
   padding: 49px 0 31px 21px;
-  width: 100%;
   text-align: left;
   align-self: flex-start;
 }
@@ -627,7 +626,7 @@ button:active {
   margin-top: 34px;
 }
 
-.error > .conteiner > .text > .button_btn {
+.error > .conteiner > .text > button {
   margin-top: 50px;
 }
 
@@ -639,7 +638,7 @@ button:active {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100vw;
+  width: 100%;
 }
 .banner .conteiner .text, .banner-contact .conteiner .text, .banner_collection .conteiner .text {
   display: flex;
@@ -726,7 +725,6 @@ button:active {
 }
 
 .servis {
-  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
